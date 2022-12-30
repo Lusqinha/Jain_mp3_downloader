@@ -28,7 +28,8 @@ st.markdown(md_header)
 radio_modos = ["Baixar por pesquisa", "Baixar por link", "Baixar por playlist"]
 
 modo = st.radio("Selecione uma opção:", radio_modos)
-query = st.text_input("PREENCHA O CAMPO ABAIXO")
+query = st.text_input("PREENCHA O CAMPO ABAIXO", key="query")
+st.button("Enviar")
 
 if modo == radio_modos[0]:
     try: 
